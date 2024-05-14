@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>rickandmortyapi</title>
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <link
+      rel="shortcut icon"
+      type="imagex/png"
+      href="./src/img/rick_96136.ico"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <img src="src/img/Rick-And-Morty-Emblema.png" alt="" />
+
+      <div class="filters">
+        <h2>Filtros</h2>
+        <input type="text" id="search" placeholder="Filtro por nome" />
+        <select name="especie" id="especie">Especies
+          <option value="" default>Especies</option>
+          <option value="animal">Animal</option>
+          <option value="alien">Alien</option>
+          <option value="disease">Doença</option>
+          <option value="unknown">Desconhecido</option>
+          <option value="human">Humano</option>
+          <option value="humanoid">Humanoide</option>
+          <option value="mythological">Mitologico</option>
+          <option value="poopybutthole">Poopybuttholy</option>
+          <option value="robot">Robo</option>
+        </select>
+        <select name="genero" id="genero">Genero
+          <option value="" default>Genero</option>
+          <option value="female">Feminino</option>
+          <option value="male">Masculino</option>
+          <option value="genderless">Sem Genero</option>
+          <option value="unknown">Desconhecido</option>
+        </select>
+        <select name="status " id="status">Status
+          <option value="" default>Status</option>
+          <option value="alive">Vivo</option>
+          <option value="dead">Morto</option>
+          <option value="unknown">Desconhecido</option>
+        </select>
+        <button type="button" id="resetar" class="resetar">Resetar Filtros</button>
+      </div>
+      <div id="character-info">
+        <div class="card">
+          <ul class="characters">
+
+          </ul>
+        </div>
+      </div>
+      
+      <button class="load-more" type="submit">Cagarregar Mais</button>
+      <div class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <div class="modal-content-card">
+        </div>
+      </div>
+    </div>
+    </main>
+    <div class="image">
+      <img
+        class="portal"
+        src="src/img/kisspng-rick-sanchez-youtube-meeseeks-and-destroy-pickle-r-rick-and-morty-5ac21f3eb26695.6388095615226714227307.png"
+        alt=""
+      />
+      <img
+        class="portal2"
+        src="src/img/kisspng-rick-sanchez-morty-smith-portal-earth-rick-and-morty-5ad6d14904e215.32103965152402772102.png"
+        alt=""
+      />
+    </div>
+    <script src="./src/js/fetch.js"></script>
+  </body>
+</html>
+
