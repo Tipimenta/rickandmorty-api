@@ -65,7 +65,9 @@ loadMoreDom.addEventListener("click", handleLoadMore);
 
 resetarBtn.addEventListener("click", resetar);
 
-function openModal(character){
+function openModal(character ){
+
+
   const createdDate = new Date(character.created);
   const formattedCreatedDate = `${createdDate.getDate()}/${createdDate.getMonth() + 1}/${createdDate.getFullYear()}`
 
